@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular pro zarezervovani zajezdu</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h2 class="mt-4">Zarezervovani zajezdu</h2>
+    <form action="zpracovani.php" method="post">
+        <div class="form-group">
+            <label for="jmeno">Jmeno zajemce:</label>
+            <input type="text" class="form-control" id="jmeno" name="jmeno" required>
+        </div>
+        <div class="form-group">
+            <label for="prijmeni">Prijmeni zajemce:</label>
+            <input type="text" class="form-control" id="prijmeni" name="prijmeni" required>
+        </div>
+        <div class="fomr-group">
+            <label for="telefon">Telefon: </label>
+            <input type="text" class="form-control" id="telefon" name="telefon" required>
+        </div>
+        <div class="form-group">
+            <label for="datum">Datum zajezdu:</label>
+            <input type="date" class="form-control" id="datum" name="datum" required>
+        </div>
+        <div class="form-group">
+            <label for="destinace">Destinace zajezdu:</label>
+            <input type="text" class="form-control" id="destinace" name="destinace" required>
+        </div>
+        <div class="form-group">
+            <label for="hotel">Nazev hotelu:</label>
+            <input type="text" class="form-control" id="hotel" name="hotel" required>
+        </div>
+        <div class="form-group">
+            <label for="cena">Cena zajezdu:</label>
+            <input type="number" class="form-control" id="cena" name="cena" step="100" min="0" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Zarezervovat zajezd</button>
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
