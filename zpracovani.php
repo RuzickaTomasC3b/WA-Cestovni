@@ -7,7 +7,7 @@ $database = "WAZajezdy";
 $conn = new mysqli($servername, $username, $password, $database);
 
 if ($conn->connect_error) {
-    die("Spojení s databází selhalo: " . $conn->connect_error);
+    die("Spojeni s databazi selhalo: " . $conn->connect_error);
 }
 
 $jmeno = $_POST['jmeno'];
